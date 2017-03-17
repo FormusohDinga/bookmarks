@@ -38,4 +38,6 @@ urlpatterns = [
         name='password_reset_complete'),
     #register
     url(r'^register/$', views.register, name='register'),
+    #edit
+    url(r'^edit/$', views.edit, name='edit'),
 ]
