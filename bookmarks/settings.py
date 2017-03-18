@@ -36,6 +36,12 @@ AUTHENTICATION_BACKENDS = (
 ##mock email
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail',
+        args=[u.username])
+}
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
