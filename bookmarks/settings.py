@@ -64,6 +64,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'account',
     'images',
+    'actions',
     'django.contrib.admin',
     'sorl.thumbnail',
 )
